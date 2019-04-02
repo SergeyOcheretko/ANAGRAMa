@@ -20,6 +20,10 @@ public class anagramTests {
         assertEquals("!@#$%^&*()", anagramCreator.Stringreverseways("!@#$%^&*()"));
     }
 
+
+
+
+
     @Test
     public void reverseStringWithCharactersAndNumbers() {
         assertEquals("zxc123zxc", anagramCreator.Stringreverseways("cxz123cxz"));
@@ -32,6 +36,10 @@ public class anagramTests {
     public void reverseEmptyString() {
         assertEquals("", anagramCreator.Stringreverseways("     "));
     }
+
+
+
+
 
     @Test
     public void reverseStringOfCharacters() {
