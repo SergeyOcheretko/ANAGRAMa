@@ -13,6 +13,8 @@ public class anagramTests {
         assertEquals("1234567890", anagramCreator.Stringreverseways("1234567890"));
     }
 
+
+
     @Test
     public void specialSymbolNotReverse() {
         assertEquals("!@#$%^&*()", anagramCreator.Stringreverseways("!@#$%^&*()"));
