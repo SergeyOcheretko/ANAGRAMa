@@ -31,10 +31,6 @@ public class anagramTests {
         assertEquals("", anagramCreator.Stringreverseways("     "));
     }
 
-
-
-
-
     @Test
     public void reverseStringOfCharacters() {
         assertEquals("HellowWorld", anagramCreator.Stringreverseways("dlroWwolleH"));
