@@ -5,10 +5,10 @@ public class AnagramCreator {
     private static final String SEPARATOR = " ";
 
     public  static String Stringreverseways(String inputString) {
-        return String.join(SEPARATOR, inreverseStrings(inputString.split(SEPARATOR)));
+        return String.join(SEPARATOR, reverseLine(inputString.split(SEPARATOR)));
     }
 
-    private static String[] inreverseStrings(String[] strings) {
+    private static String[] reverseLine(String[] strings) {
         String[] reversedStrings = new String[strings.length];
         int stringNumber, lastStringNumber = strings.length;
         for (stringNumber = 0; stringNumber < lastStringNumber; stringNumber++) {
@@ -29,7 +29,7 @@ public class AnagramCreator {
             else if (!Character.isAlphabetic(charArrayOfWord[numberOfRightChar]))
                 numberOfRightChar--;
             else {
-                ChangeCharacters(charArrayOfWord, numberOfLeftChar, numberOfRightChar);
+                changeCharacters(charArrayOfWord, numberOfLeftChar, numberOfRightChar);
                 numberOfLeftChar++;
                 numberOfRightChar--;
             }
@@ -38,11 +38,11 @@ public class AnagramCreator {
 
     }
 
-    private static char[] ChangeCharacters(char[] arrayOfChars, int firstCharNum, int secondCharNum) {
-        char clipboard = arrayOfChars[firstCharNum];
-        arrayOfChars[firstCharNum] = arrayOfChars[secondCharNum];
-        arrayOfChars[secondCharNum] = clipboard;
-        return arrayOfChars;
+    private static char[] changeCharacters(char[] hostOfChars, int firstCharNum, int secondCharNum) {
+        char clipboard = hostOfChars[firstCharNum];
+        hostOfChars[firstCharNum] = hostOfChars[secondCharNum];
+        hostOfChars[secondCharNum] = clipboard;
+        return hostOfChars;
     }
 
 }
